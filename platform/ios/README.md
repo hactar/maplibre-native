@@ -110,7 +110,7 @@ _These instructions are for XCode 14.3.1_
 
 
 ```
-bazel run //platform/ios:xcodeproj
+bazel run //platform/ios:xcodeproj --@rules_xcodeproj//xcodeproj:extra_common_flags="--//:renderer=metal"
 xed platform/ios/MapLibre.xcodeproj
 ```
 
